@@ -32,7 +32,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 		</db:select>
 		<json:object-to-json-transformer doc:name="Object to JSON" />
 		<jms:outbound-endpoint queue="flights" connector-ref="Active_MQ" doc:name="JMS" />
-        <set-property propertyName="Content-Type" value="#['application/json']" doc:name="Content-Type"/>
+        <set-property propertyName="#['Content-Type']" value="#['application/json']" doc:name="Content-Type"/>
 	</flow>
 	<flow name="trainingFlow">
 		<jms:inbound-endpoint queue="flights" connector-ref="Active_MQ" doc:name="JMS" />
