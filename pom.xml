@@ -65,7 +65,7 @@
 					<deploymentType>cloudhub</deploymentType>
 					<muleVersion>${mule.version}</muleVersion>
 					<username>dpower</username>
-					<password>Mule!aPi2dayk</password>
+					<password>Mule!aPi2day</password>
 					<workerType>Micro</workerType>
 					<redeploy>true</redeploy>
 					<environment>Production</environment>
